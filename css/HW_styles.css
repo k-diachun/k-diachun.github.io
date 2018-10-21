@@ -1,5 +1,5 @@
 .header {
-    padding: 80px; /* some padding */
+    padding: 10px; /* some padding */
     text-align: center; /* center the text */
     background: #1abc9c; /* green background */
     color: white; /* white text color */
@@ -138,4 +138,32 @@
 
 .slideshow {
 	align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Create four equal columns for product cards*/
+.productcolumn {
+    float: left;
+    padding: 10px;
+	width: 25%;
 }
