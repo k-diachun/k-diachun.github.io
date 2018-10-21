@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Contact</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="HW_styles.css">
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-</head>
-<body>
-
-<div class="header">
-	<img src="Images/Logo.jpg" style="width:30%">
-	<h1>Heistand Woodworking</h1>
-	<p>We specialize in Furniture Design, Cabinet Design, Outdoor Pieces, and Custom Designed Pieces</p>
-	<p>Ask us how we can help your visions become an actual piece!</p>
-</div>
-<iframe src="navbar.html" class="navbar" />
-<div class="content">
-<p><strong>CONTACT US!! WE WOULD LOVE TO HEAR FROM YOU!!</strong></p>
-<p>
-	<img class="contactIcons" src="Images/phone.jpg"  />
-	<img class="contactIcons" src="Images/facebook.png"/>
-	<img class="contactIcons" src="Images/email.jpg"/>
-</p>
-<p>Send us an email! <a href="mailto:craftsman@heistandwoodworking.com">craftsman@heistandwoodworking.com</a></p>
-<p>Give us a call! 203-679-WOOD (9663)</p>
-<p>Check us out on Facebook! <a href="http://www.facebook.com/heistandwoodwork">http://www.facebook.com/heistandwoodwork</a></p>
-<p>Our shop is located in Germantown, OH!</p>
-</div>
-<div class="footer">
-  <p>© Heistand Woodworking All rights reserved 2018</p>
-</div>
-</body>
+	<head>
+		<link rel="icon" type="image/png" sizes="96x96" href="Images/Logo.png">
+		<title>Contact</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Styles for this template -->
+		<link rel="stylesheet" type="text/css" href="css/HW_styles.css">
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/main.js"></script>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<div id="nav-placeholder"></div>
+		<script>
+		$(function(){
+		$("#nav-placeholder").load("navbar.html");
+		});
+		</script>
+		<!--end of Navigation bar-->
+		<div class="content">
+			<p><strong>CONTACT US!! WE WOULD LOVE TO HEAR FROM YOU!!</strong></p>
+			<p>
+				<img class="contactIcons" src="Images/phone.jpg"  />
+				<img class="contactIcons" src="Images/facebook.png"/>
+				<img class="contactIcons" src="Images/email.jpg"/>
+			</p>
+			<p>Send us an email! <a href="mailto:craftsman@heistandwoodworking.com">craftsman@heistandwoodworking.com</a></p>
+			<p>Give us a call! 203-679-WOOD (9663)</p>
+			<p>Check us out on Facebook! <a href="http://www.facebook.com/heistandwoodwork">http://www.facebook.com/heistandwoodwork</a></p>
+			<p>Our shop is located in Germantown, OH!</p>
+		</div>
+		<div class="footer">
+			<p>© Heistand Woodworking All rights reserved 2018</p>
+		</div>
+	</body>
 </html>
