@@ -144,6 +144,7 @@
 .column {
     float: left;
     padding: 10px;
+	text-align:justify;
 }
 
 .left, .right {
@@ -166,4 +167,16 @@
     float: left;
     padding: 10px;
 	width: 25%;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .productcolumn {
+        width: 50%;
+    }
+}
+/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .productcolumn {
+        width: 100%;
+    }
 }
