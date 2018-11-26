@@ -37,7 +37,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: gray;
+    background-color: red;
 }
 
 .dropdown-content {
@@ -65,39 +65,27 @@
 .show {
     display: block;
 }
-
-.navbar .navbar-brand img {
-	height:30px;
-}
 </style>
 </head>
 <body>
-<div class="header">
-	<img src="Images/Logo.jpg" alt="company logo" style="width:10%">
-	<h1>Heistand Woodworking</h1>
-	<p>We specialize in Furniture Design, Cabinet Design, Outdoor Pieces, and Custom Designed Pieces</p>
-	<p>Ask us how we can help your visions become an actual piece!</p>
-</div>
+
 <div class="navbar">
-	<div class="navbar-header">
-		<a href="index.html" class="navbar-brand pull-left"><img src="Images/Logo.jpg"></a>
-	</div>
-	<a href="index.html">Home</a>
-    <div class="dropdown">
-		<button class="dropbtn" onclick="myFunction()">Shopping
-			<i class="fa fa-caret-down"></i>
-		</button>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
     <div class="dropdown-content" id="myDropdown">
-		<a href="cabinets.html">Cabinets</a>
-		<a href="christmas.html">Christmas</a>
-		<a href="furniture.html">Furniture</a>
-		<a href="scrollwork.html">Scrollwork</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
     </div>
-	<a href="contact.html">Contact</a>
-	<a href="about.html">About</a>
-	<a href="cart.html">Cart</a>
   </div> 
 </div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
 
 <script>
 /* When the user clicks on the button, 
