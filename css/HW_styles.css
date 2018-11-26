@@ -42,7 +42,7 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: gray;
 }
 
 .dropdown-content {
@@ -156,7 +156,7 @@ a.button:hover {
 }
  
 .left-column img {
-  width: 100%;
+  width: 60%;
   left: 0;
   top: 0;
   opacity: 0;
