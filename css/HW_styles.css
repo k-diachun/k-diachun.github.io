@@ -137,7 +137,7 @@
 }
 
 
-.a button {
+a.button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -149,7 +149,7 @@
   font-size: 18px;
 }
 
-.a button:hover {
+a.button:hover {
   opacity: 0.7;
 }
 
