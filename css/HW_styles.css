@@ -160,7 +160,7 @@ a.button:hover {
 /*Product Page Columns */
 .left-column {
   width: 65%;
-  position: relative;
+  position: absolute;
 }
  
 .left-column img {
