@@ -178,6 +178,8 @@ a.button:hover {
 }
 
 .right-column {
+  float: right;
+  padding: 10px;
   width: 35%;
   margin-top: 60px;
 }
