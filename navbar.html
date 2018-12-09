@@ -1,79 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-a {
-  text-decoration: none;
-}
-
-nav {
-    font-family: arial;
-}
-
-ul {
-  background: black;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-li {
-    color: #fff;
-  background: black;
-    display: block;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    font-size: 16px;
-    text-decoration: none;
-  transition-duration: 0.5s;
-}
-  
-li a {
-  color: #fff;
-}
-
-li:hover,
-li:focus-within {
-    background: gray;
-    cursor: pointer;
-}
-
-li:focus-within a {
-  outline: none;
-}
-
-ul li ul {
-    background: black;
-    visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-    position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-    left: 0;
-  display: none;
-}
-
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
-  visibility: visible;
-  opacity: 1;
-  display: block
-}
-
-ul li ul li {
-    clear: both;
-  width: 100%;
-}
-  
 .navbar {
-	float: left;
-	height:35px;
-	background-color: black;
-	width: inherit;
-	padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: gray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.navbar .navbar-brand img {
+	height:30px;
 }
 </style>
+</head>
 <body>
 <div class="header">
 	<img src="Images/Logo.jpg" alt="company logo" style="width:10%">
@@ -81,22 +87,49 @@ ul li ul li {
 	<p>We specialize in Furniture Design, Cabinet Design, Outdoor Pieces, and Custom Designed Pieces</p>
 	<p>Ask us how we can help your visions become an actual piece!</p>
 </div>
-<nav role="navigation" class="navbar">
-  <ul>
-	<li><a href="index.html"><img src="Images/Logo.jpg" style="height:30px"></a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">Shopping</a>
-      <ul class="dropdown">
-        <li><a href="cabinets.html">Cabinets</a></li>
-        <li><a href="christmas.html">Christmas</a></li>
-        <li><a href="furniture.html">Furniture</a></li>
-        <li><a href="scrollwork.html">Scrollwork</a></li>
-      </ul>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="cart.html">Cart</a></li>
-    <li><a href="cart.html">4:50pm</a></li>
-  </ul>
-</nav>
+<div class="navbar">
+	<div class="navbar-header">
+		<a href="index.html" class="navbar-brand pull-left"><img src="Images/Logo.jpg"></a>
+	</div>
+	<a href="index.html">a-Home</a>
+	<a href="contact.html">a-Contact</a>
+	<a href="about.html">a-About</a>
+	<a href="cart.html">a-Cart</a>
+	<a href="cart.html">a-5:10pm</a>
+	<ul>
+		<li><a href="index.html"><img src="Images/Logo.jpg" style="height:30px"></a></li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Shopping</a>
+		  <ul class="dropdown">
+			<li><a href="cabinets.html">Cabinets</a></li>
+			<li><a href="christmas.html">Christmas</a></li>
+			<li><a href="furniture.html">Furniture</a></li>
+			<li><a href="scrollwork.html">Scrollwork</a></li>
+		  </ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="cart.html">Cart</a></li>
+		<li><a href="cart.html">5:10pm</a></li>
+	</ul>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
 </body>
+</html>
